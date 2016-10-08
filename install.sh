@@ -29,3 +29,7 @@ echo "Installed packages and apps."
 
 n latest
 echo "Node set to $(node -v)"
+
+
+ln -s $dir/gitconfig ~/.gitconfig
+echo "Dotfiles setup!"
