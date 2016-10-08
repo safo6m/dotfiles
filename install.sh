@@ -24,7 +24,8 @@ brew tap caskroom/cask
 brew tap homebrew/services
 
 xargs brew install < packages/brewlist
-echo "Installed packages"
+xargs brew install < packages/casklist
+echo "Installed packages and apps."
 
 n latest
 echo "Node set to $(node -v)"
