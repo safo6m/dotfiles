@@ -30,6 +30,12 @@ echo "Installed packages and apps."
 n latest
 echo "Node set to $(node -v)"
 
+if ! command -v apm >/dev/null 2>&1; then
+    echo "Run Atom and install apm!"
+    echo "Afterwards you can always run apm install --packages-file ~/dotfiles/packages/atomlist"
+else
+    apm install --packages-file packages/atomlist
+fi
 
 ln -s $dir/gitconfig ~/.gitconfig
 echo "Dotfiles setup!"
