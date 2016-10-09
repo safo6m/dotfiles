@@ -42,6 +42,7 @@ git submodule update --init --recursive
 
 ln -s $dir/gitconfig ~/.gitconfig
 ln -s $dir/zshrc ~/.zshrc
+ln -s $dir/atom/snippets.cson ~/.atom/snippets.cson
 
 if [ ! -f $dir/secrets.sh ]; then
     touch secrets.sh
