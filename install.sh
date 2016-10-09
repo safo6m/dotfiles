@@ -43,4 +43,8 @@ git submodule update --init --recursive
 ln -s $dir/gitconfig ~/.gitconfig
 ln -s $dir/zshrc ~/.zshrc
 
+if [ ! -f $dir/secrets.sh ]; then
+    touch secrets.sh
+fi
+
 echo "Dotfiles setup!"

@@ -29,6 +29,8 @@ export PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:$(brew --prefix c
 export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/opt/X11/lib/pkgconfig
 export PATH=${PATH}:/Users/safo/Development/android-sdk-macosx/platform-tools:/Users/safo/Development/android-sdk-macosx/tools
 
+. $HOME/dotfiles/secrets.sh
+
 alias nw="/Applications/node-webkit.app/Contents/MacOS/node-webkit"
 
 # Make Grunt print stack traces by default
