@@ -33,4 +33,17 @@ All secret environment variables should go into `secrets.sh`.
 
 ### Included atom plugins
 
+* atom-beautify
+* atom-material-syntax
+* auto-update-packages
+* file-icons
+* git-blame
+* highlight-selected
+* language-babel
+* linter
+* linter-eslint
+* linter-scss-lint
+* open-in-browser
+* pigments
+* pretty-json
 * sort-lines

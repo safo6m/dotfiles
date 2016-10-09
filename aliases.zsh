@@ -36,3 +36,4 @@ alias jsh="pbpaste | highlight --syntax=js -O rtf | pbcopy"
 alias cssh="pbpaste | highlight --syntax=css -O rtf | pbcopy"
 
 alias canary="open -a Google\ Chrome\ Canary --args --disable-web-security"
+alias fuck="thefuck"
