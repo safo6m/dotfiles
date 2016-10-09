@@ -41,4 +41,6 @@ fi
 git submodule update --init --recursive
 
 ln -s $dir/gitconfig ~/.gitconfig
+ln -s $dir/zshrc ~/.zshrc
+
 echo "Dotfiles setup!"
