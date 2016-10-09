@@ -37,5 +37,8 @@ else
     apm install --packages-file packages/atomlist
 fi
 
+
+git submodule update --init --recursive
+
 ln -s $dir/gitconfig ~/.gitconfig
 echo "Dotfiles setup!"
