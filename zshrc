@@ -20,8 +20,7 @@ source $ZSH/oh-my-zsh.sh
 source $HOME/dotfiles/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $HOME/dotfiles/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-
-. `brew --prefix`/etc/profile.d/z.sh
+. $HOME/dotfiles/zsh/z/z.sh
 
 eval "$(rbenv init -)"
 
