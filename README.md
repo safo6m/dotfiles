@@ -12,7 +12,11 @@ All secret environment variables should go into `secrets.sh`.
 
 * Alfred
 * Atom
+* Firefox
+* Google Chrome
+* Postico
 * Spectacle
+* VLC
 
 ### Included tools
 

@@ -24,7 +24,7 @@ brew tap caskroom/cask
 brew tap homebrew/services
 
 xargs brew install < packages/brewlist
-xargs brew install < packages/casklist
+xargs brew cask install < packages/casklist
 echo "Installed packages and apps."
 
 n latest
