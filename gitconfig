@@ -3,3 +3,5 @@
 	name = Mihael Safaric
 [core]
 	editor = nano
+[push]
+	default = simple
