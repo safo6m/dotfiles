@@ -50,5 +50,6 @@ All secret environment variables should go into `secrets.sh`.
 
 ### Included npm packages (globally installed)
 
-* phantomjs
 * npm-check-updates
+* phantomjs
+* svgo
