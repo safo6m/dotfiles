@@ -47,3 +47,8 @@ All secret environment variables should go into `secrets.sh`.
 * pigments
 * pretty-json
 * sort-lines
+
+### Included npm packages (globally installed)
+
+* phantomjs
+* npm-check-updates
