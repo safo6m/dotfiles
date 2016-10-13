@@ -14,6 +14,7 @@ All secret environment variables should go into `secrets.sh`.
 * Atom
 * Firefox
 * Google Chrome
+* Mou
 * Postico
 * Spectacle
 * VLC
