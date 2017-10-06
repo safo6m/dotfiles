@@ -6,4 +6,5 @@ n
 postgresql
 python
 rbenv
+wget
 zsh
