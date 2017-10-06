@@ -1,5 +1,8 @@
+# Path to cloned dotfiles folder
+DOTFILES=$HOME/dotfiles
+
 # Path to your oh-my-zsh configuration.
-ZSH=$HOME/.oh-my-zsh
+ZSH=$DOTFILES/zsh/oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -7,8 +10,8 @@ ZSH=$HOME/.oh-my-zsh
 # time that oh-my-zsh is loaded.
 ZSH_THEME="gallois"
 
-if [ -f $HOME/dotfiles/aliases.zsh ]; then
-    . $HOME/dotfiles/aliases.zsh
+if [ -f $DOTFILES/aliases.zsh ]; then
+  . $DOTFILES/aliases.zsh
 fi
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)

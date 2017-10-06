@@ -1,11 +1,6 @@
 #!/bin/bash
 
-function prompt {
-    read -p "🍕  Are you sure you wish to continue? y/[n] "
-    if [ "$REPLY" != "y" ]; then
-	exit
-    fi
-}
+source "helpers.sh"
 
 dir=`PWD`
 
@@ -23,32 +18,39 @@ fi
 brew tap caskroom/cask
 brew tap homebrew/services
 
-xargs brew install < packages/brewlist
-xargs brew cask install < packages/casklist
+installBrewItemsWithPrompts "packages/brewlist"
+installBrewCaskItemsWithPrompts "packages/casklist"
+
+echo ">>> -------------------------------- <<<"
 echo "Installed packages and apps."
+echo ">>> -------------------------------- <<<"
 
 n latest
+echo ">>> -------------------------------- <<<"
 echo "Node set to $(node -v)"
+echo ">>> -------------------------------- <<<"
 
 xargs npm install -g < packages/npmlist
+
+echo ">>> -------------------------------- <<<"
 echo "Installed node packages"
+echo ">>> -------------------------------- <<<"
 
-if ! command -v apm >/dev/null 2>&1; then
-    echo "Run Atom and install apm!"
-    echo "Afterwards you can always run apm install --packages-file ~/dotfiles/packages/atomlist"
-else
-    apm install --packages-file packages/atomlist
+
+read -p "🍕  Are you sure you wish to atom packages? y/[n] "
+if [ "$REPLY" == "y" ]; then
+  installAtomPackages
+  ln -s $dir/atom/snippets.cson ~/.atom/snippets.cson
 fi
-
 
 git submodule update --init --recursive
 
 ln -s $dir/gitconfig ~/.gitconfig
 ln -s $dir/zshrc ~/.zshrc
-ln -s $dir/atom/snippets.cson ~/.atom/snippets.cson
 
 if [ ! -f $dir/secrets.sh ]; then
-    touch secrets.sh
+  touch secrets.sh
 fi
 
+echo ">>> -------------------------------- <<<"
 echo "Dotfiles setup!"

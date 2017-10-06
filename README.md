@@ -1,12 +1,21 @@
 # Collection of dotfiles
 
-### Installation
+### Getting started
+
+#### Prerequirements
+
+* check that you have ssh key generated (cloning git repositories will fail otherwise)
+
+#### Installation
 
 ```
 ./install.sh
 ```
 
-All secret environment variables should go into `secrets.sh`.
+#### After the installation
+
+* update `dotfiles/gitconfig`
+* All secret environment variables should go into `dotfiles/secrets.sh`.
 
 ### Included apps
 
