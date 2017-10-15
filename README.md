@@ -63,3 +63,8 @@
 * npm-check-updates
 * phantomjs
 * svgo
+
+
+### TODO
+
+* Replace `rm` with the something safer, i.e. [Shell-sage-rm](https://github.com/kaelzhang/shell-safe-rm)
