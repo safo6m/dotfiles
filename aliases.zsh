@@ -23,6 +23,7 @@ alias server="python -m SimpleHTTPServer"
 
 # Git
 alias gff="git flow feature"
+alias gmc='git merge --continue'
 
 alias prune-branches="git remote prune origin && git branch -vv | grep ': gone]' | awk '{print $1}' | xargs git branch -d"
 
