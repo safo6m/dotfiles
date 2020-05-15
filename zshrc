@@ -17,7 +17,7 @@ fi
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git cp colorize colored-man git-flow brew npm bower zsh-syntax-highlighting)
+plugins=(git cp colorize colored-man-pages git-flow brew npm bower)
 
 source $ZSH/oh-my-zsh.sh
 source $HOME/dotfiles/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
@@ -42,4 +42,6 @@ command -v grunt > /dev/null && alias grunt="grunt --stack"
 # thefuck
 eval $(thefuck --alias)
 
-DISABLE_MAGIC_FUNCTIONS=true
+# Syntax highlighting is slow when pasting long strings
+# Disable highlighting for long string
+export ZSH_HIGHLIGHT_MAXLENGTH=200
