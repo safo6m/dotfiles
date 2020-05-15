@@ -37,3 +37,7 @@ alias jsh="pbpaste | highlight --syntax=js -O rtf | pbcopy"
 alias cssh="pbpaste | highlight --syntax=css -O rtf | pbcopy"
 
 alias canary="open -a Google\ Chrome\ Canary --args --disable-web-security"
+
+# NutriU
+alias create-nutriu-branch="python3 /Users/safo6m/dotfiles/nutriu/create_branch.py ${1}"
+alias generate-changelog="python3 /Users/safo6m/dotfiles/nutriu/generate-changelog.py"

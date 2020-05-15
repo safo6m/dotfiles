@@ -38,3 +38,8 @@ alias nw="/Applications/node-webkit.app/Contents/MacOS/node-webkit"
 
 # Make Grunt print stack traces by default
 command -v grunt > /dev/null && alias grunt="grunt --stack"
+
+# thefuck
+eval $(thefuck --alias)
+
+DISABLE_MAGIC_FUNCTIONS=true

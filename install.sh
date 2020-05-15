@@ -37,7 +37,7 @@ echo "Installed node packages"
 echo ">>> -------------------------------- <<<"
 
 
-read -p "🍕  Are you sure you wish to atom packages? y/[n] "
+read -p "🍕  Are you sure you wish to install atom packages? y/[n] "
 if [ "$REPLY" == "y" ]; then
   installAtomPackages
   ln -s $dir/atom/snippets.cson ~/.atom/snippets.cson
