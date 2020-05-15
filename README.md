@@ -14,7 +14,7 @@
 
 #### After the installation
 
-* update `dotfiles/gitconfig`
+* update `dotfiles/gitconfig` (check gitconfig section)
 * All secret environment variables should go into `dotfiles/secrets.sh`.
 
 ### Included apps
@@ -64,6 +64,10 @@
 * phantomjs
 * svgo
 
+### gitconfig
+
+* update user setting with your own
+* set `gpgsign` if you are not using signed commits ([how to set up signed commits](https://help.github.com/en/articles/signing-commits))
 
 ### TODO
 

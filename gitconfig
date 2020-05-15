@@ -3,5 +3,9 @@
 	name = Mihael Safaric
 [core]
 	editor = nano
+	excludesfile = /Users/safo6m/.gitignore
+	ignorecase = false
 [push]
 	default = simple
+[commit]
+	gpgsign = true
