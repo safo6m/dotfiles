@@ -1,5 +1,5 @@
 #aliases
-alias ios="open /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app"
+alias ios="open -a Simulator"
 alias lsd='ls -lF ${colorflag} | grep "^d"'
 alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm update npm -g; npm update -g; sudo gem update'
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
