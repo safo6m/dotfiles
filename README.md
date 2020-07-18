@@ -19,14 +19,22 @@
 
 ### Included apps
 
+* 1Password
 * Alfred
 * Atom
+* Enpass
 * Firefox
 * Google Chrome
+* Kiwi for Gmail
 * Mou
+* Postgres
 * Postico
+* Postman
 * Spectacle
+* Spotify
+* Ticktick
 * VLC
+* Zoom
 
 ### Included tools
 
