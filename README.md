@@ -30,7 +30,7 @@
 * Postgres
 * Postico
 * Postman
-* Spectacle
+* Rectangle
 * Spotify
 * Ticktick
 * VLC
