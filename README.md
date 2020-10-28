@@ -13,6 +13,8 @@
 ./install.sh
 ```
 
+You will be prompted before installation of each application so you can decide whether you want it or not.
+
 #### After the installation
 
 * update `dotfiles/gitconfig` (check gitconfig section)
@@ -27,6 +29,7 @@
 * Firefox
 * Google Chrome
 * Kiwi for Gmail
+* Microsoft Teams
 * Mou
 * Postgres
 * Postico
@@ -35,6 +38,7 @@
 * Spotify
 * Ticktick
 * VLC
+* Zeplin
 * Zoom
 
 ### Included tools
