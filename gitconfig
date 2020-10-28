@@ -1,7 +1,6 @@
 [user]
 	email = mihael.safaric@gmail.com
 	name = Mihael Safaric
-	signingkey = CBE358B9EB8C5858
 [core]
 	editor = nano
 	excludesfile = /Users/safo6m/.gitignore
