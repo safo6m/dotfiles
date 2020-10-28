@@ -5,6 +5,7 @@
 #### Prerequirements
 
 * check that you have ssh key generated (cloning git repositories will fail otherwise)
+* zshrc file has a hardcoded path to `dotfiles` folder, `$HOME/dotfiles`. Change it if you are using a different location.
 
 #### Installation
 
@@ -79,4 +80,4 @@
 
 ### TODO
 
-* Replace `rm` with the something safer, i.e. [Shell-sage-rm](https://github.com/kaelzhang/shell-safe-rm)
+* Replace `rm` with something safer, i.e. [Shell-sage-rm](https://github.com/kaelzhang/shell-safe-rm)
