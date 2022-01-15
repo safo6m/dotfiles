@@ -30,12 +30,14 @@ echo ">>> -------------------------------- <<<"
 echo "Node set to $(node -v)"
 echo ">>> -------------------------------- <<<"
 
-xargs npm install -g < packages/npmlist
+read -p "🍕  Are you sure you wish to install global node packages? y/[n] "
+if [ "$REPLY" == "y" ]; then
+  xargs npm install -g < packages/npmlist
 
-echo ">>> -------------------------------- <<<"
-echo "Installed node packages"
-echo ">>> -------------------------------- <<<"
-
+  echo ">>> -------------------------------- <<<"
+  echo "Installed node packages"
+  echo ">>> -------------------------------- <<<"
+fi
 
 read -p "🍕  Are you sure you wish to install atom packages? y/[n] "
 if [ "$REPLY" == "y" ]; then
