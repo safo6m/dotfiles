@@ -22,7 +22,7 @@ function installBrewCaskItemsWithPrompts {
     read -p "🍕  Are you sure you wish to install $name? y/[n] "
 
     if [ "$REPLY" == "y" ]; then
-      brew cask install $name
+      brew install $name
     fi
   done
 }

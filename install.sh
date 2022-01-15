@@ -15,7 +15,7 @@ else
     echo "Brew already installed!"
 fi
 
-brew tap caskroom/cask
+brew tap homebrew/cask
 brew tap homebrew/services
 
 installBrewItemsWithPrompts "packages/brewlist"
